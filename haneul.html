@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>하늘에게 💌</title>
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: linear-gradient(#a1c4fd, #c2e9fb);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #ff7eb9;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    button:hover {
+      background-color: #ff5894;
+      transform: scale(1.05);
+    }
+    #message {
+      display: none;
+      font-size: 1.3em;
+      margin-top: 30px;
+      animation: fadeIn 1s ease-in-out;
+      white-space: pre-line;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <h1>사랑하는 하늘아 💖</h1>
+  <p>이 페이지는 너를 위해 만든 내 편지야.</p>
+  <button onclick="showMessage()">열어보기</button>
+  <div id="message">
+    하늘아,<br><br>
+    우리가 처음 만난 날부터 지금까지,<br>
+    오직 너만을 사랑해왔어<br>
+    이제는 때가 된거같아 .<br><br>
+    <strong>남은 내인생 너와 함께 하려고해</strong><br><br>
+    이제부터는 내 인생의 모든 순간에<br>
+    니와 함께해줘.<br><br>
+    나랑 평생 함께해줄래? 💍
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
